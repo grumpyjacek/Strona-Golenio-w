@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(126, 149, 223);
+}
+
+#kontener{
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: white;
+    color:black;
+    font-size: 18px;
+}
+
+#header{
+    max-width: 1200px;
+    margin:0 auto;
+    margin:0;
+}
+
+header img{
+    width: 100%;
+    height: 3.7em;
+    display: block;  
+}
+
+nav{
+    background-color: rgb(50, 78, 148);
+    display: flex;
+    justify-content: space-around;  
+}
+
+nav a{
+    font-size: 1.6em;
+    padding: 0.5em 0;
+    color:wheat;
+    text-decoration:none;
+}
+
+nav a:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+article{
+    margin: 0;
+    padding: 1.5em 0 0 0;
+}
+
+article h1{
+    font-size: 1.7em;
+    text-align: center;
+    margin: 2% 5%;
+    padding: 1em 0;
+    border-top:1px solid black;
+    border-bottom:1px solid  rgb(50, 78, 148);
+}
+
+article h2{
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1.3em 30%;
+    padding: 1em 0;
+    border-bottom:1px solid rgb(50, 78, 148);
+}
+
+ article p{
+    text-align: justify;
+    padding: 1.2em;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+.prawa{
+    float: right;
+    padding: 0 0 0 1.8em;
+    width: 40%;
+    min-width: 200px;
+    height: auto;
+}
+
+.lewa{
+    float: left;
+    padding: 0 30px 0 0;
+    width: 40%;
+    min-width: 200px;
+    height: auto;
+}
+
+.aktualnosci{
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5em;
+}
+
+.media{
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    margin: 1.2em 10%;  
+}
+
+.media a{
+    text-decoration: none;
+}
+
+.odwolanie{
+    border-radius: 15px;
+    margin:10px 5%;
+    background: rgb(50, 78, 148);
+    color:wheat;
+    padding: 20px 5px;
+    font-size: 1.2em;
+}
+
+.wydarzenia{
+    width: 75%;
+    background: rgb(209, 217, 245);
+    border-radius: 15px;
+    margin:10px 5% 10px 0;
+    padding: 30px;
+    
+}
+
+.gal{
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.zdjecia{
+    display: inline-block;
+    margin: 20px 30px;
+    height: auto;
+    text-align: center;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+}
+
+.zdjecia .link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    padding: 25% 5%;
+    left:0;
+    top: 0;
+    opacity: 0;
+}
+
+.link a{
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color:black;   
+}
+
+.zdjecia:hover .link{
+    opacity: 1;
+}
+
+.zdjecia img{
+    width: 100%;
+    height: auto;
+    transition: all 1.2s ease-in-out;
+}
+
+.zdjecia:hover img{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+.kontakty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kontakty div{
+    background-color:rgb(209, 217, 245);
+    margin: 10px auto;
+    padding: 2%;
+    min-height: 200px;
+    flex-basis: 28%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.kontakty h2{
+    margin: 2%;
+    padding: 0;
+}
+
+.kontakty p{
+    text-align: center;
+}
+
+.widokowki{
+    display: inline-block;
+    margin: 2% 4%;
+    text-align: center;
+    padding: 0px;
+    width: 40%;
+    height: auto;  
+}
+.widokowki img{
+    width: 100%;
+}
+
+footer{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 1%;
+    background-color: rgb(50, 78, 148);
+    color:black;
+    text-align: center;
+}
+
+@media (max-width: 1024px){
+    .link a{
+        font-size: 1.5em;  
+    }
+    .media{
+        width: 30%;
+        margin: 1.2em 5%; 
+    }
+    .wydarzenia{
+        width: 60%;
+    }
+    .kontakty div{
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width:768px){
+    #kontener{
+        font-size: 15px;
+    }
+    .link a{
+        font-size: 1.2em; 
+    }
+
+    .prawa{
+        float: unset;
+        padding: 0;
+    }
+    .lewa{
+        float: unset;
+        padding: 0;
+    }
+}
+
+@media (max-width:480px){
+    #kontener{
+        font-size: 12px;
+    }
+    article h1{
+        font-size: 1.3em;
+    }
+    article h2{
+        font-size: 1em;
+    }
+    .link a{
+        font-size: 1em; 
+    }
+  
+    .zdjecia{
+        min-width: 100px;
+    }
+    nav a{
+        font-size: 1em;
+        padding: 0.2em 0;
+    }
+}
